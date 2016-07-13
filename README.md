@@ -4,7 +4,7 @@ A Swift implementation of an openGL View that displays a video
 
 Compile with Xcode 8 beta 2
 
-Current issues:
+##  Current issues:
 - Color are wrong (it seems that the V value of YUV color is missing)
 
 Additional issues in the simulator only:
@@ -12,5 +12,5 @@ Additional issues in the simulator only:
 - The image has vertical aberations
 
 
-### on a device - on the simulator- desired
+##  Current issues preview: on a device - on the simulator - desired output
 ![alt tag](readme-image.jpg)
