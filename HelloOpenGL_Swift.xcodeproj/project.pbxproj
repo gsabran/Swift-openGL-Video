@@ -216,13 +216,16 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = V25XX8Q7L2;
 						DevelopmentTeamName = "Guillaume Sabran (Personal Team)";
+						LastSwiftMigration = 0800;
 					};
 					21D0C3AC1B8CDE4000E51C72 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 21D0C3981B8CDE4000E51C72;
 					};
 					21D0C3B71B8CDE4000E51C72 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 21D0C3981B8CDE4000E51C72;
 					};
 				};
@@ -451,6 +454,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -466,6 +470,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -477,6 +482,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DR.HelloOpenGL-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloOpenGL_Swift.app/HelloOpenGL_Swift";
 			};
 			name = Debug;
@@ -490,6 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "DR.HelloOpenGL-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloOpenGL_Swift.app/HelloOpenGL_Swift";
 			};
 			name = Release;
@@ -501,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DR.HelloOpenGL-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = HelloOpenGL_Swift;
 				USES_XCTRUNNER = YES;
 			};
@@ -514,6 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "DR.HelloOpenGL-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = HelloOpenGL_Swift;
 				USES_XCTRUNNER = YES;
 			};

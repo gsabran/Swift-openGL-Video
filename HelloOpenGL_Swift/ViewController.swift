@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let frame = UIScreen.main().bounds
+        let frame = UIScreen.main.bounds
         glView = OpenGLView(frame: frame, viewWillRender: onGlRefresh)
         self.view.addSubview(glView)
 
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
 
     func setupVideo() -> Void {
-        let url = Bundle.main.urlForResource("big_buck_bunny", withExtension: "mp4")!
+        let url = Bundle.main.url(forResource: "big_buck_bunny", withExtension: "mp4")!
 
         // since all openGl - video example use YUV color, we do the same
         let outputSettings: [String: AnyObject] = ["kCVPixelBufferPixelFormatTypeKey": Int(kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange)]
@@ -65,15 +65,17 @@ class ViewController: UIViewController {
     /**
      This function is called by the openGL view when the view is preparing for rendering
     **/
-    func onGlRefresh(glView: OpenGLView) -> Void {
+    func onGlRefresh(_ glView: OpenGLView) -> Void {
         if self.isVideoReady {
             let pixelBuffer = self.videoOutput.copyPixelBuffer(forItemTime: self.playerItem.currentTime(), itemTimeForDisplay: nil)
             glView.pixelBuffer = pixelBuffer
         }
     }
 
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    override var prefersStatusBarHidden: Bool {
+        get {
+            return true
+        }  
     }
 
     override func didReceiveMemoryWarning() {
